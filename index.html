@@ -7,36 +7,41 @@
     <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
-    <header>
-      <h1>AI Food Fact Generator</h1>
-    </header>
-    <main>
-      <form>
-        <input
-          type="text"
-          placeholder="Enter your favourite dish?"
-          autofocus
-          required
-          autocomplete="off"
-        />
-        <input type="submit" />
-      </form>
-      <div>
-        Bullet point 1
-        <br />
-        Bullet point 2
-      </div>
-    </main>
-    <footer>
-      This AI project is created by
-      <a href="https://github.com/TechBree" target="_blank">Bridgit Kodohu</a>,
-      open-source on
-      <a href="https://github.com/TechBree/AI-generator" target="_blank"
-        >Github</a
-      >
-      , and is hosted on
-      <a href="https://ai-generated-she-codes.netlify.app/"> Netlify</a>
-    </footer>
+    <div class="container">
+      <header>
+        <h1>AI Food Fact Generator</h1>
+      </header>
+
+      <main>
+        <form>
+          <input
+            type="text"
+            placeholder="Enter your favourite dish?"
+            autofocus
+            required
+            autocomplete="off"
+            class="finding"
+          />
+          <input type="submit" class="submit-button" />
+          <p class="example">i.e: Pizza, Pasta, Chocolate cake</p>
+        </form>
+        <div class="food-info">
+          Bullet point 1
+          <br />
+          Bullet point 2
+        </div>
+      </main>
+      <footer>
+        This AI project is created by
+        <a href="https://github.com/TechBree" target="_blank">Bridgit Kodohu</a
+        >, open-source on
+        <a href="https://github.com/TechBree/AI-generator" target="_blank"
+          >Github</a
+        >
+        , and is hosted on
+        <a href="https://ai-generated-she-codes.netlify.app/"> Netlify</a>
+      </footer>
+    </div>
     <script src="src/index.js"></script>
   </body>
 </html>
