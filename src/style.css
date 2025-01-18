@@ -60,6 +60,10 @@ form {
   border-left: 3px solid #885df1;
 }
 
+.food-info strong {
+  color: yellowgreen;
+}
+
 footer {
   font-size: 14px;
   text-align: center;
