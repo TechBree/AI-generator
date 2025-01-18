@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AI Generator</title>
     <link rel="stylesheet" href="src/style.css" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
   </head>
   <body>
     <div class="container">
@@ -13,7 +14,7 @@
       </header>
 
       <main>
-        <form>
+        <form id="food-generator">
           <input
             type="text"
             placeholder="Enter your favourite dish?"
@@ -25,11 +26,7 @@
           <input type="submit" class="submit-button" />
           <p class="example">i.e: Pizza, Pasta, Chocolate cake</p>
         </form>
-        <div class="food-info">
-          Bullet point 1
-          <br />
-          Bullet point 2
-        </div>
+        <div class="food-info" id="food"></div>
       </main>
       <footer>
         This AI project is created by
