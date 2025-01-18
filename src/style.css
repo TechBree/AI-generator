@@ -47,7 +47,7 @@ form {
   border: none;
 }
 
-.food-info {
+.info {
   background-color: #fff;
   font-family: "Times New Roman", Times, serif;
   padding: 25px;
@@ -60,11 +60,28 @@ form {
   border-left: 3px solid #885df1;
 }
 
-.food-info strong {
+.hidden {
+  display: block;
+}
+.info strong {
   color: yellowgreen;
 }
 
 footer {
   font-size: 14px;
   text-align: center;
+}
+
+.searching {
+  animation: blink-animation 1s steps(5, start) infinite;
+}
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
 }

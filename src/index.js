@@ -1,5 +1,4 @@
 function displayFact(response) {
-  console.log("Food fact");
   new Typewriter("#food", {
     strings: response.data.answer,
     autoStart: true,
@@ -17,17 +16,12 @@ function createFact(event) {
     "You are a food expert with knowledge about any dish, write 4 very very short sentences about history of the dish using basic HTML, remove the title and bullet points, sign 'Bridgit SheCode' inside <strong> element at the bottom";
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
-  axios.get(apiUrl).then(displayFact);
+  let foodBoxElement = document.querySelector("#food");
+  foodBoxElement.classList.remove("hidden");
+  foodBoxElement.innerHTML = `<div class="searching">Generate a food fact about ${instructionInput.value}</div>`;
 
-  console.log("generate Fact");
-  console.log(`Prompt: ${prompt}`);
-  console.log(`Context: ${context}`);
+  axios.get(apiUrl).then(displayFact);
 }
 
 let foodFactGenerator = document.querySelector("#food-generator");
 foodFactGenerator.addEventListener("submit", createFact);
-
-//setup the API URL
-// Display the answer
-//input the user interface
-//generate the prompt and context using console
